@@ -1,0 +1,105 @@
+.<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Blessedkono app</title>
+    <script src="js/vue.js"></script>
+
+</head>
+<body>
+
+<div id="app">
+    {{message}}
+</div>
+
+ <div id="app2">
+     <div v-bind:title="message">
+
+         Here is the ragraph of a given vue title
+     </div>
+ </div>
+
+<!-- for loop-->
+<div id="app3">
+    <ol>
+        <li v-for="todo in todos">
+            {{ todo.text }}
+        </li>
+    </ol>
+</div>
+
+<!--for input control -->
+<div id="app4">
+    <p>{{message}}</p>
+    <button v-on:click="viewMessage">Click</button>
+<!--    <button v-on:click="reverseMessage">Reverse Message</button>-->
+</div>
+
+<!-- for the input text-->
+<div id="app5">
+    <p>{{message}}</p>
+    <input v-model="message">
+</div>
+
+<!-- test component-->
+<ol>
+    <test-item>
+
+    </test-item>
+</ol>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello bleesedkono!'
+        }
+    });
+    app.message = 'i have change  data';
+
+    var app2 = new Vue({
+        el:'#app2',
+        data: {
+            message: 'This is done data'
+        }
+    })
+
+    // for loop
+    var app3 = new Vue({
+        el:'#app3',
+        data:{
+            todos: [
+                {text:'test for loop for vue js'},
+                {text:'test for loop for vue js2'},
+                {text:'test for loop for vue js3'},
+            ]
+        }
+    });
+
+    // input button
+    var app4 = new Vue({
+        el:'#app4',
+        data: {
+            message: 'Hello Vue.js!'
+        },
+        methods:{
+            viewMessage:function () {
+                this.message =  this.message.split('').reverse().join('')
+            },
+        }
+    })
+
+    //input text
+    var app5 = new Vue({
+        el:'#app5',
+        data:{
+    message:'hello its an input'
+    }
+    })
+
+    // first vue component
+    Vue.component('test-item',function () {
+        template: '<li>Test componebt</li>'
+    })
+</script>
+</body>
+</html>
