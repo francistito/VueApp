@@ -1,58 +1,26 @@
-.<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>Blessedkono app</title>
+    <title>Vue Component Blog Post Example</title>
     <script src="js/vue.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 
 <div id="app">
-<!--    {{message}}-->
-    <ol>
-        <!-- Create an instance of the todo-item component -->
-        <todo-item
-        v-for="item in list"
-        v-bind:todo="item"
-        v-bind:key="item.id">
+    <h1>CONDITIONAL STATMENT</h1>
+    <button v-on:click="error=!error">Error</button>
+    <button v-on:click="success =!success">Success</button>
+
+    <p v-if="error">There is some errors</p>
+    <p v-else="error">No errors</p>
+    <ul>
+        <li v-for="item in items">{{item.item  }}</li>
 
 
-        </todo-item>
+    </ul>
+ </div>
 
-    </ol>
-</div>
-<!-- <div id="app2">-->
-<!--     <div v-bind:title="message">-->
-
-<!--         Here is the ragraph of a given vue title-->
-<!--     </div>-->
-<!-- </div>-->
-<!--&lt;!&ndash; for loop&ndash;&gt;-->
-<!--<div id="app3">-->
-<!--    <ol>-->
-<!--        <li v-for="todo in todos">-->
-<!--            {{ todo.text }}-->
-<!--        </li>-->
-<!--    </ol>-->
-<!--</div>-->
-
-<!--&lt;!&ndash;for input control &ndash;&gt;-->
-<!--<div id="app4">-->
-<!--    <p>{{message}}</p>-->
-<!--    <button v-on:click="viewMessage">Click</button>-->
-<!--&lt;!&ndash;    <button v-on:click="reverseMessage">Reverse Message</button>&ndash;&gt;-->
-<!--</div>-->
-
-<!--&lt;!&ndash; for the input text&ndash;&gt;-->
-<!--<div id="app5">-->
-<!--    <p>{{message}}</p>-->
-<!--    <input v-model="message">-->
-<!--</div>-->
-
-<!-- test component-->
-<script src="js/index.js">
-
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>

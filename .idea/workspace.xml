@@ -4,6 +4,8 @@
     <list default="true" id="16c78fd1-b3d5-47c6-836a-b9df21866f18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/vue.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -57,7 +59,20 @@
       <option name="presentableId" value="Default" />
       <updated>1583224770968</updated>
       <workItem from="1583224772143" duration="5006000" />
-      <workItem from="1583332012718" duration="3488000" />
+      <workItem from="1583332012718" duration="9258000" />
+      <workItem from="1583435542065" duration="4600000" />
+      <workItem from="1583733880042" duration="1859000" />
+      <workItem from="1583908237516" duration="2296000" />
+      <workItem from="1584172298190" duration="1188000" />
+      <workItem from="1584351234167" duration="5589000" />
+      <workItem from="1584428722562" duration="626000" />
+      <workItem from="1584446050397" duration="593000" />
+      <workItem from="1584467052875" duration="3253000" />
+      <workItem from="1584780780468" duration="585000" />
+      <workItem from="1584903592391" duration="584000" />
+      <workItem from="1584968732653" duration="2050000" />
+      <workItem from="1585339942198" duration="4998000" />
+      <workItem from="1585570024762" duration="4419000" />
     </task>
     <servers />
   </component>
