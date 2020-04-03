@@ -6,20 +6,18 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
+<div id="vue-app-one">
+    <h1>{{title}}</h1>
+    <greeting></greeting>
 
-<div id="app">
-    <h1>CONDITIONAL STATMENT</h1>
-    <button v-on:click="error=!error">Error</button>
-    <button v-on:click="success =!success">Success</button>
+</div>
 
-    <p v-if="error">There is some errors</p>
-    <p v-else="error">No errors</p>
-    <ul>
-        <li v-for="item in items">{{item.item  }}</li>
+<div id="vue-app-two">
+    <h1>{{title}}</h1>
+    <greeting></greeting>
 
+</div>
 
-    </ul>
- </div>
 
 <script src="js/index.js"></script>
 </body>
